@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand">#795548</color>
+    <color name="brand700">#5D4037</color>
+    <color name="brandDark">#4E342E</color>
+    <color name="grey900">#212121</color>
+    <color name="complementaryDark">#4d4d4c</color>
+    <drawable name="complementary">#969696</drawable>
+    <drawable name="brand">#795548</drawable>
+    <drawable name="brandDark">#4E342E</drawable>
+    <drawable name="transparent">#00000000</drawable>
+
+    <color name="material_teal">#009688</color>
+
+    <color name="translucent_scrim_bottom">#96000000</color>
+    <color name="translucent_scrim_bottom_center">#39000000</color>
+</resources>
