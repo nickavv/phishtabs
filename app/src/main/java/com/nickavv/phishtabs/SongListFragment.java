@@ -24,10 +24,6 @@ import com.nickavv.phishtabs.utilities.SongListAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-import xyz.danoz.recyclerviewfastscroller.sectionindicator.title.SectionTitleIndicator;
-import xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller;
-
-
 public class SongListFragment extends Fragment implements SearchView.OnQueryTextListener {
 
     //private ProgressBar spinny;
@@ -77,12 +73,6 @@ public class SongListFragment extends Fragment implements SearchView.OnQueryText
         songList.setLayoutManager(llm);
         adapter = new SongListAdapter(allData, getContext());
         songList.setAdapter(adapter);
-
-        VerticalRecyclerViewFastScroller fastScroller = (VerticalRecyclerViewFastScroller) v.findViewById(R.id.fast_scroller);
-        fastScroller.setRecyclerView(songList);
-        songList.addOnScrollListener(fastScroller.getOnScrollListener());
-        SectionTitleIndicator<Character> sectionTitleIndicator = (SectionTitleIndicator<Character>) v.findViewById(R.id.fast_scroller_section_title_indicator);
-        fastScroller.setSectionIndicator(sectionTitleIndicator);
 
         songTypeDropdown = (Spinner) getActivity().findViewById(R.id.spinner_song_nav);
         songTypeDropdown.setVisibility(View.VISIBLE);

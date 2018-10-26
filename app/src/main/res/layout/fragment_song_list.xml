@@ -7,25 +7,24 @@
 
     <android.support.v7.widget.RecyclerView
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/songList"
         android:layout_width="match_parent"
         android:padding="10dp"
-        android:layout_height="match_parent" />
-
-    <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
-        android:id="@+id/fast_scroller"
-        android:layout_width="30dp"
         android:layout_height="match_parent"
-        android:layout_alignParentEnd="true"
-        recyclerviewfastscroller:rfs_barColor="@android:color/transparent"
+        app:fastScrollEnabled="true"
+        app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable"
+        app:fastScrollVerticalTrackDrawable="@drawable/line_drawable"
+        app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"
+        app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable"
         />
 
     <com.nickavv.phishtabs.utilities.SongSectionTitleIndicator
         android:id="@+id/fast_scroller_section_title_indicator"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/list_item_height"
-        android:layout_toStartOf="@id/fast_scroller"
+        android:layout_toStartOf="@id/songList"
 
         recyclerviewfastscroller:rfs_backgroundColor="@color/material_teal"
         recyclerviewfastscroller:rfs_textColor="@android:color/white"
