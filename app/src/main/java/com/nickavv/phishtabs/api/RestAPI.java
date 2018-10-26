@@ -27,7 +27,7 @@ import java.util.ArrayList;
  * Created by Nick on 9/12/2015.
  */
 public class RestAPI {
-    private static final String apiBaseUrl = "http://phishtabs.nicholasvv.com/";
+    private static final String apiBaseUrl = "https://phishtabs.nicholasvv.com/";
 
     public static ArrayList<Album> getAlbums(String artist, Context context) {
         ArrayList<Album> result = new ArrayList<Album>();

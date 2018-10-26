@@ -92,7 +92,7 @@ public class TabViewer extends AppCompatActivity {
         tabView.getSettings().setUseWideViewPort(true);
         tabView.getSettings().setSupportZoom(true);
         tabView.getSettings().setBuiltInZoomControls(true);
-        url = "http://emilstabs.org/files/tabs/" + song.getFileName();
+        url = "https://emilstabs.org/files/tabs/" + song.getFileName();
         new Thread(new notFoundChecker()).start();
         tabView.loadUrl(url);
 
